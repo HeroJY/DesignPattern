@@ -4,7 +4,7 @@ package ObserverPattern;
  * Created by hjy on 2017/6/16.
  * 观察者模式测试类
  * 观察者模式主要就是：当被观察者类发生改变的时候，依赖于这个类的观察者类也对应发生改变，
- *                  同时这两个类之间的耦合十分松
+ *                  同时这两个类之间的耦合不紧
  */
 public class mainTest {
     public static void main(String[] args) {

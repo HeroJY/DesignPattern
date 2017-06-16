@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Created by hjy on 2017/6/16.
- * 被观察者，当菜单上的名字发生变化的时候，通知到各个餐馆
+ * 被观察者，当菜单上的名字发生变化的时候，通知到各个餐馆的菜单
  */
 public class Menu implements Subject {
     //注册列表

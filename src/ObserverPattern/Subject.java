@@ -2,7 +2,7 @@ package ObserverPattern;
 
 /**
  * Created by hjy on 2017/6/16.
- * 这个是被观察者的接口
+ * 这个是被观察者需要实现的接口
  */
 public interface Subject {
     //注册观察者

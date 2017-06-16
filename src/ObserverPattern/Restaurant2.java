@@ -2,7 +2,7 @@ package ObserverPattern;
 
 /**
  * Created by hjy on 2017/6/16.
- * 观察者2，当被观察者发生变化的时候展示的菜单需要变化
+ * 观察者2，当被观察者发生变化的时候展示的菜单需要变化，但不直接和观察者发生耦合
  */
 public class Restaurant2 implements Observer {
     //观察者
