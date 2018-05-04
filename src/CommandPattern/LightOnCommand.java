@@ -5,14 +5,20 @@ package CommandPattern;
  * 命令模式中的命令对象
  */
 public class LightOnCommand implements Command {
-    //定义接收对象的类型
+    /**
+     * 定义接收对象的类型
+     */
     private Light light;
-    //记录一下当前灯的状态，为撤销做储备
+    /**
+     * 记录一下当前灯的状态，为撤销做储备
+     */
     private String presentElectric;
     private String presentStatus;
     private int presentBrightness;
 
-    //构造方法中确定接收者
+    /**
+     * 构造方法中确定接收者
+     */
     public LightOnCommand(Light light) {
         this.light = light;
     }

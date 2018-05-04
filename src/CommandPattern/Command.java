@@ -5,8 +5,13 @@ package CommandPattern;
  * 命令模式统一接口
  */
 public interface Command {
-    //执行
+    /**
+     * 执行
+     */
     void execute();
-    //撤销
+
+    /**
+     * 撤销
+     */
     void undo();
 }
