@@ -5,14 +5,19 @@ package CommandPattern;
  * 命令模式中的命令者
  */
 public class RemoteControl {
-    //首先需要有一个命令位置记录
+    /**
+     * 命令位置记录
+     */
     Command[] commands;
-    //其次需要记录上一个命令
+    /**
+     * 记录上一个命令
+     */
     Command undoCommand;
-    //最后初始化一个空对象，用于初始化
+    /**
+     * 初始化一个空对象，用于初始化
+     */
     Command noCommand = new NoCommand();
 
-    //构造函数中初始化位置。并放入空对象
     public RemoteControl() {
         commands = new Command[2];
         //两个位置
@@ -23,12 +28,19 @@ public class RemoteControl {
         undoCommand = noCommand;
     }
 
-    //装载命令
+    /**
+     * 装载命令
+     * @param slot
+     * @param command
+     */
     public void setCommand(int slot, Command command) {
         commands[slot] = command;
     }
 
-    //执行命令
+    /**
+     * 执行命令
+     * @param slot
+     */
     public void doSomeThing(int slot) {
         //执行命令
         commands[slot].execute();
@@ -36,7 +48,9 @@ public class RemoteControl {
         undoCommand = commands[slot];
     }
 
-    //撤销上一个命令
+    /**
+     * 撤销上一个命令
+     */
     public void rollback() {
         undoCommand.undo();
     }
